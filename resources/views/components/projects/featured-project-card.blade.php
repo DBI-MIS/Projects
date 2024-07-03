@@ -12,18 +12,12 @@
     </div>
     @endif
         <div class="h-min w-full md:w-2/3">
-            {{-- @if ($project->img === null)
-            <tr>
-                <td><img src="{{asset('')}}" alt="project Image" class="w-auto h-auto max-h-[120px] max-w-[180px]"></td>
-            </tr>
-            @endif --}}
-            {{-- <img class="w-auto h-auto max-h-[120px] max-w-[180px]  bg-blue-800" 
+           <img class="w-full bg-blue-800" 
             src="/storage/{{ $project->img }}" 
-            alt=""> --}}
-            <img class="w-full bg-blue-800" 
-            src="{{ $project->img }}" 
             alt="">
-            {{-- <div class="h-auto bg-blue-800"></div> --}}
+            {{-- <img class="w-full bg-blue-800" 
+            src="{{ $project->img }}" 
+            alt=""> --}}
         </div>
         <div class="w-full flex flex-col p-2 my-auto">
             
@@ -32,7 +26,6 @@
         <a wire:navigate href="{{ route('projects.show', $project->slug) }}">{{ $project->name}}</a>
         </span>
         <span class="font-light text-sm">{{ $project->address}}</span>
-        {{-- <span class="font-light text-sm">{{ $project->category}}</span> --}}
         </div>
        
         

@@ -36,4 +36,9 @@ class Project extends Model
     {
         return Str::limit(strip_tags($this->description), 50);
     }
+
+    public function writer()
+    {
+        return $this->belongsTo(User::class, 'user_id');
+    }
 }

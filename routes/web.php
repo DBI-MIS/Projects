@@ -12,9 +12,9 @@ Route::get('/project', [ProjectController::class, 'index'])->name('projects.inde
 
 Route::get('/project/{project:slug}', [ProjectController::class, 'show'])->name('projects.show');
 
-Route::view('dashboard', 'dashboard')
-    ->middleware(['auth', 'verified'])
-    ->name('dashboard');
+// Route::view('dashboard', 'dashboard')
+//     ->middleware(['auth', 'verified'])
+//     ->name('dashboard');
 
 Route::view('profile', 'profile')
     ->middleware(['auth'])

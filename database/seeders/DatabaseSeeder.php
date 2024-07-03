@@ -22,9 +22,9 @@ class DatabaseSeeder extends Seeder
         'name' => 'admin',
         'email' => 'admin@dbiphils.com',
         'password' => Hash::make('password'),
-        // 'role' => 'ADMIN',
+        'role' => 'ADMIN',
     ]);
 
-        Project::factory(30)->create();
+        // Project::factory(30)->create();
     }
 }

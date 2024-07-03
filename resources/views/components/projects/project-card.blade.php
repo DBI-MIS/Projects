@@ -5,14 +5,9 @@
     wire:navigate href="{{ route('projects.show', $project->slug) }}">
         
         <div class="">
-            {{-- @if ($project->img === null)
-            <tr>
-                <td><img src="{{asset('')}}" alt="project Image" class="w-auto h-auto max-h-[120px] max-w-[180px]"></td>
-            </tr>
-            @endif
-            <img class="w-auto h-auto max-h-[120px] max-w-[180px]  bg-blue-800" 
+            <img class="w-full  bg-blue-800" 
             src="/storage/{{ $project->img }}" 
-            alt=""> --}}
+            alt="">
             <img class="w-full bg-blue-800" 
             src="{{ $project->img }}" 
             alt="">

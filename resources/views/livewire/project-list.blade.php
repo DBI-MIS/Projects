@@ -1,27 +1,5 @@
 <div class=" px-3 lg:px-7 py-6">
-    {{-- <div class="flex justify-between items-center border-b border-gray-100">
-        <div class="text-gray-600">
-            
-            @if($this->category)
-                <a wire:navigate href="{{ route('projects.index', ['category' => $this->category])}}"> 
-                {{ $this->category }}
-                </a>
-            @elseif($search)
-                <span class="ml-3">
-                Searching <strong>{{ $search }}</strong>
-                </span>
-            @endif
-
-            @if($this->category || $search)
-                <button class="text-gray-500 text-xs mr-3" wire:click="clearFilters">x</button>
-            @endif 
-        </div>
-        <div class="flex items-center space-x-4 font-light ">
-            <button class="{{ $sort === 'desc' ? 'text-gray-900 border-b border-gray-700': 'text-gray-500' }} py-4" wire:click="setSort('desc')">Latest</button>
-            <button class="{{ $sort === 'asc' ? 'text-gray-900 border-b border-gray-700': 'text-gray-500' }} py-4 " wire:click="setSort('asc')">Oldest</button>
-            
-        </div>
-    </div> --}}
+   
     <div class="py-5 flex flex-col md:grid md:grid-cols lg:grid-cols-2">
         @if ($this->projects->count() == 0)
         <tr>

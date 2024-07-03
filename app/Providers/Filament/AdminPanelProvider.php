@@ -34,6 +34,7 @@ class AdminPanelProvider extends PanelProvider
             ->breadcrumbs(false)
             ->darkMode(false)
             ->spa()
+            ->brandName('DB Projects')
             ->colors([
                 'primary' => Color::Sky,
             ])
