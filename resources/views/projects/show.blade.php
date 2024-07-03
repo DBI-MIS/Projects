@@ -11,13 +11,8 @@
         <div class="flex-grow-0 mb-5 rounded-md border-opacity-10 bg-white border-blue-800 overflow-hidden" 
         style="min-width:280px; max-width:280px"
         >
-            @if ($project->img === null)
-            <tr>
-                <td><img src="{{asset('/project_Default.png')}}" alt="project Image" class="w-full max-h-48"></td>
-            </tr>
-            @endif
-            {{-- <img class="w-full" src="/storage/{{ $project->img }}" alt=""> --}}
-            <img class="w-full" src="{{ $project->img }}" alt="">
+            <img class="w-full" src="/storage/{{ $project->img }}" alt="">
+            {{-- <img class="w-full" src="{{ $project->img }}" alt=""> --}}
             
         </div>
         <div class="grid grid-cols-3 gap-3 flex-grow">        

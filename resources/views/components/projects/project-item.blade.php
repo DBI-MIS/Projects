@@ -4,13 +4,8 @@
         <div class="col-span-4 flex flex-row gap-2 items-start">
            
             <div class="col-span-1 flex-shrink-0 w-[180px]">
-                @if ($project->img === null)
-                <tr>
-                    <td><img src="{{asset('/')}}" alt="project Image" class="w-auto h-auto max-w-[160px] max-h-[100px] mx-auto  bg-blue-600"></td>
-                </tr>
-                @endif
-                {{-- <img class="w-auto h-auto max-w-[160px] max-h-[100px] mx-auto  bg-blue-600" src="/storage/{{ $project->img }}" alt=""> --}}
-                <img class="w-auto h-auto max-w-[160px] max-h-[100px] mx-auto  bg-blue-600" src="{{ $project->img }}" alt="">
+                <img class="w-auto h-auto max-w-[160px] max-h-[100px] mx-auto  bg-white" src="/storage/{{ $project->img }}" alt="">
+                {{-- <img class="w-auto h-auto max-w-[160px] max-h-[100px] mx-auto  bg-blue-600" src="{{ $project->img }}" alt=""> --}}
             </div>
             
             <div class="col-span-2 flex flex-col">

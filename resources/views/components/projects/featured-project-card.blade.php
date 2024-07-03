@@ -12,7 +12,7 @@
     </div>
     @endif
         <div class="h-min w-full md:w-2/3">
-           <img class="w-full bg-blue-800" 
+           <img class="w-full bg-white" 
             src="/storage/{{ $project->img }}" 
             alt="">
             {{-- <img class="w-full bg-blue-800" 
