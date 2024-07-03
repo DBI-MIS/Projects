@@ -16,13 +16,25 @@ class HomeController extends Controller
     
     {
 
-        // $featuredProducts = Cache::remember('featuredProducts', now()->addDay(), function () {
-        //     return Product::where('status', true)->where('featured',true)->latest('date_posted')->take(6)->get();
-        // });
+        $featuredProjects = Project::where('status', true)
+        ->where('featured', true)
+        ->latest('published_at')
+        ->take(20)
+        ->get();
+    
+        $nonFeaturedProjects = Project::where('status', true)
+        ->where('featured', false)
+        ->latest('published_at')
+        ->take(100 - $featuredProjects->count())
+        ->get();
+
+        $projects = $featuredProjects->merge($nonFeaturedProjects);
+
         return view('home', [
-            // 'featuredProducts' => $featuredProducts,
-            'featuredProjects' => Project::where('status', true)->where('featured',true)->latest('published_at')->take(9)->get(),
-            'allProjects' => Project::where('status', true)->where('featured',false)->latest('published_at')->take(20)->get(),
+            'featuredProjects' => $projects,
+
+            // 'featuredProjects' => Project::where('status', true)->where('featured',true)->latest('published_at')->take(10)->get(),
+            // 'allProjects' => Project::where('status', true)->where('featured',false)->latest('published_at')->take(20)->get(),
 
         ]);
     }

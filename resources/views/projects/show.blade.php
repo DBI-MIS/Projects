@@ -8,7 +8,7 @@
         
         <div class="flex flex-col md:flex-row items-start gap-x-2 w-full">
            
-        <div class="flex-grow-0 py-5 px-5 mb-5 rounded-md border-opacity-10 p-2 bg-white border-blue-800" 
+        <div class="flex-grow-0 mb-5 rounded-md border-opacity-10 bg-white border-blue-800 overflow-hidden" 
         style="min-width:280px; max-width:280px"
         >
             @if ($project->img === null)
@@ -43,7 +43,7 @@
                     
                   
                     <div class="gap-x-2 mt-4">
-                            <span class="mr-1 px-2 py-1 text-sm bg-sky-200">{{ $project->address }}</span>
+                            <span class="mr-1 px-2 py-1 text-sm bg-sky-200 rounded-xl">{{ $project->address }}</span>
                             
                     </div>
                     

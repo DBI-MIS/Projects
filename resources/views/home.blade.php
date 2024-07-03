@@ -1,4 +1,5 @@
 <x-app-layout title="Projects Page">
+
     {{-- @section('hero')
     <!-- Hero -->
 
@@ -45,34 +46,33 @@
         <div class="mb-10 w-full">
             <div class="my-10">
                 <h1 class="my-2 sm:my-4 md:my-6 text-xl xl:text-2xl text-gray-800 font-bold " animate-shake animate-infinite animate-ease-in>
-                    Featured Projects</h1>
+                    Project Installations</h1>
                     <hr>
                 <div class="w-full mt-6">
-                    <ul x-data x-masonry class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    
                     {{-- <div class="flex flex-col"> --}}
-                        
-
+                    <div x-data x-masonry class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4">
+                            
                         @foreach($featuredProjects as $project)
-                        <li class="">
                             <x-projects.featured-project-card :project="$project" />
-                        </li>
                         @endforeach
                     
+                    </div>
                     {{-- </div> --}}
-                </ul>
+               
                 </div>
               
               
             </div>
         
 
-            <div class="my-10">
+            {{-- <div class="my-10">
                 <hr>
                 <h1 class="my-2 sm:my-4 md:my-6 text-xl xl:text-2xl text-gray-800 font-bold " animate-shake animate-infinite animate-ease-in>
                     Projects</h1>
                     <div class="w-full mt-6">
                         <ul x-data x-masonry class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                        {{-- <div class="flex flex-col"> --}}
+                     
                             
     
                             @foreach($allProjects as $project)
@@ -81,14 +81,16 @@
                             </li>
                             @endforeach
                         
-                        {{-- </div> --}}
+                       
                     </ul>
                     </div>
-                <a class="mt-10 block text-center text-lg text-blue-500 font-semibold"
+                
+            </div> --}}
+            
+            <hr>
+            <a class="mt-10 block text-center text-lg text-blue-500 font-semibold"
                     href="{{ route('projects.index') }}">View All
                     Projects</a>
-            </div>
-            <hr>
 
             
         </div>
