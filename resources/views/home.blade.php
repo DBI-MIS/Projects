@@ -7,7 +7,7 @@
                     <hr>
                 <div class="w-full mt-6 ">
                     
-                    <div x-data x-masonry.poll.2500 class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4">
+                    <div x-data x-masonry class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4">
                             
                         @foreach($featuredProjects as $project)
                             <x-projects.featured-project-card :project="$project" />

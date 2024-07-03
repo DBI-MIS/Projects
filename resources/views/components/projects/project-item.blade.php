@@ -5,7 +5,7 @@
            
             <div class="col-span-1 flex-shrink-0 w-[180px]">
                 <img class="w-auto h-auto max-w-[160px] max-h-[100px] mx-auto  bg-white" src="/storage/{{ $project->img }}" alt="">
-                {{-- <img class="w-auto h-auto max-w-[160px] max-h-[100px] mx-auto  bg-blue-600" src="{{ $project->img }}" alt=""> --}}
+                <img class="w-auto h-auto max-w-[160px] max-h-[100px] mx-auto  bg-blue-600" src="{{ $project->img }}" alt="">
             </div>
             
             <div class="col-span-2 flex flex-col">

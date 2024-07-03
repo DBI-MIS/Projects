@@ -12,7 +12,7 @@
         style="min-width:280px; max-width:280px"
         >
             <img class="w-full" src="/storage/{{ $project->img }}" alt="">
-            {{-- <img class="w-full" src="{{ $project->img }}" alt=""> --}}
+            <img class="w-full" src="{{ $project->img }}" alt="">
             
         </div>
         <div class="grid grid-cols-3 gap-3 flex-grow">        

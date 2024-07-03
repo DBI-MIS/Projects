@@ -15,9 +15,9 @@
            <img class="w-full bg-white" 
             src="/storage/{{ $project->img }}" 
             alt="">
-            {{-- <img class="w-full bg-blue-800" 
+            <img class="w-full bg-blue-800" 
             src="{{ $project->img }}" 
-            alt=""> --}}
+            alt="">
         </div>
         <div class="w-full flex flex-col p-2 my-auto">
             
