@@ -49,7 +49,7 @@
                             <td>No Description to display.</td>
                         </tr>
                         @endif
-                    {!! $project->description !!}
+                    {{ $project->description }}
                     </div>
 
                     
